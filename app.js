@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3666
+const port = process.env.port || 3666
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const messagesRoutes = require('./routes/messages')
