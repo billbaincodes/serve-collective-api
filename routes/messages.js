@@ -4,7 +4,7 @@ const messages = require('../messages')
 
 
 router.get('/', (req, res) => {
-  res.json({ messages })
+  res.json(messages)
 })
 
 router.get('/:id', (req, res, next) => {
