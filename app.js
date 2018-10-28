@@ -6,7 +6,7 @@ const cors = require('cors')
 const messagesRoutes = require('./routes/messages')
 
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended : false }))
 app.use(cors())
 
 app.get('/', (req, res) => {
@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/messages', messagesRoutes)
-
 
 
 app.use((req, res, next) => {
